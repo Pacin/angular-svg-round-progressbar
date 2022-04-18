@@ -1,0 +1,56 @@
+{
+  "name": "angular-svg-round-progressbar",
+  "version": "5.0.2",
+  "description": "Angular module that uses SVG to create a circular progressbar for Angular v9.1.12",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build-demo": "ng build demo --prod",
+    "build-lib": "ng build angular-svg-round-progressbar --prod && npm run copy-readme",
+    "release-lib": "npm run lint && npm run build-lib && npm publish ./dist/angular-svg-round-progressbar",
+    "release-demo": "npm run lint && ng deploy demo",
+    "lint": "ng lint",
+    "copy-readme": "cp README.md dist/angular-svg-round-progressbar"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/crisbeto/angular-svg-round-progressbar.git"
+  },
+  "keywords": [
+    "angular",
+    "progress",
+    "circle",
+    "round",
+    "svg"
+  ],
+  "author": "crisbeto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crisbeto/angular-svg-round-progressbar/issues"
+  },
+  "homepage": "https://github.com/crisbeto/angular-svg-round-progressbar",
+  "peerDependencies": {
+    "@angular/core": "^9.1.12",
+    "@angular/common": "^9.1.12"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^0.901.12",
+    "@angular-devkit/build-ng-packagr": "^0.901.12",
+    "@angular/cli": "9.1.12",
+    "@angular/common": "9.1.12",
+    "@angular/compiler": "9.1.12",
+    "@angular/compiler-cli": "9.1.12",
+    "@angular/core": "9.1.12",
+    "@angular/forms": "9.1.12",
+    "@angular/platform-browser": "9.1.12",
+    "@angular/platform-browser-dynamic": "9.1.12",
+    "angular-cli-ghpages": "^0.6.2",
+    "codelyzer": "5.2.1",
+    "ng-packagr": "9.1.5",
+    "rxjs": "6.5.4",
+    "tslib": "1.11.1",
+    "tslint": "5.20.1",
+    "typescript": "3.7.5",
+    "zone.js": "~0.10.3"
+  }
+}
